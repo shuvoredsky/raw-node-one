@@ -1,4 +1,5 @@
 import http, {IncomingMessage, Server, ServerResponse} from 'http';
+import config from './config/index';
 const server: Server = http.createServer((req:IncomingMessage, res: ServerResponse)=>{
     console.log('server is running....')
 
@@ -12,6 +13,6 @@ const server: Server = http.createServer((req:IncomingMessage, res: ServerRespon
 
 })
 
-server.listen(5000, ()=>{
-    console.log(`server is running on port ${5000}`)
+server.listen(config.port, ()=>{
+    console.log(`server is running on port ${config.port}`)
 })

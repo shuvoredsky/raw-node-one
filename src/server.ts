@@ -7,7 +7,7 @@ import findDynamicRoute from './helpers/dynamicRouteHandler';
 
 
 const server: Server = http.createServer((req:IncomingMessage, res: ServerResponse)=>{
-    console.log('server is running....')
+    console.log('server is running.....')
 
     const method = req.method?.toUpperCase() || "";
     const path = req.url || "";

@@ -2,6 +2,7 @@ import http, {IncomingMessage, Server, ServerResponse} from 'http';
 import config from './config/index';
 import {  RouteHandler, routes } from './helpers/RouteHandler';
 import "./routes";
+import findDynamicRoute from './helpers/dynamicRouteHandler';
 
 
 
